@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light: rgb(193, 208, 220);
+    --dark: black;
+    --soft: #141e30;
+    --bright: #0013de;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 100%;
+    position: relative;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, 30%, #141e30 40%, #243b55 50%, 60%, rgb(0, 0, 0) 90%);
+    background-size: cover;
+    color: var(--light);
+}
+
+p {
+    margin: 1%;
+}
+
+.header {
+    display: block;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.header_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.header_container {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    cursor: pointer;
+    color: var(--light);
+    transition: color .3s;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    display: inline-flex;
+}
+
+.header_subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .0625rem;
+    padding-left: 10px;
+}
+
+.header_nav {
+    display: block;
+}
+
+.header_nav a {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 10px;
+    color: var(--light);
+    font-size: 1.1rem;
+    background-image: linear-gradient(270deg, var(--dark) 0%, var(--dark) 100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2rem;
+    transition: all 0.25 ease-in;
+}
+
+.header_nav a:hover {
+    background-size: 100% 100%;
+    color: var(--bright);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.subheader_section {
+    display: block;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.intro,
+.work {
+    margin: 15px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.intro>h2,
+.work>h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 1.5vw;
+    line-height: 1.1;
+}
+
+.intro>div,
+.work>div {
+    flex: 0 0 77%;
+}
+
+.intro p,
+.work p {
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site {
+    border: 5px solid var(--soft);
+    color: var(--bright);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: hard-light;
+    background-size: 150%;
+    transition: all 0.25s;
+    font-size: 1rem;
+}
+
+.site:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.site:hover {
+    background-color: rgba(169, 174, 247, 0.5);
+}
+
+.site div {
+    background-color: var(--light);
+    padding: 8px 10px;
+}
+
+.site h3 {
+    font-size: 1.1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 1% 20px 0;
+    background-color: var(--dark);
+    color: var(--light);
+    justify-content: center;
+}
+
+footer h2 {
+    line-height: 1.5;
+    font-size: 1.5vw;
+    padding-right: 10px;
+}
+
+footer ul li {
+    color: var(--light);
+    padding: 20px 1% 20px 1;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-style: normal;
+    display: inline-flex;
+}
+
+footer ul li a {
+    color: var(--light);
+}
+
+footer ul li a:hover {
+    background-size: 100% 88%;
+    color: var(--bright);
+}
+
+.main-event {
+    background-image: url("../images/Rings.jpg")
+}
+
+.other-training {
+    background-image: url("../images/Paws.jpg");
+}
+
+.other-adventure {
+    background-image: url("../images/Adventure.jpg");
+}
+
+.other-planner {
+    background-image: url("../images/Expenses.jpg")
+}
+
+.other-schedule {
+    background-image: url("../images/Planting.jpg")
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .intro>h2,
+    .work>h2 {
+        flex: 0 0 100%;
+    }
+
+    .intro>div,
+    .work>div {
+        flex: 0 0 100%;
+    }
+
+    .intro h2,
+    .work h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--dark);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    footer {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer h2 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .site,
+    .site:first-child {
+        flex-basis: 100%;
+    }
+
+    .site:first-child {
+        min-height: 150px;
+    }
+}
