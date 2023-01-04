@@ -9,7 +9,17 @@ Footer includes contact information, with email and links to GitHub and LinkedIn
 
 ## Features
 
-The porfolio is single page but will include links to additional projects (web pages). The design is responsive and optimized for SEO and accessibility (with improvements to follow).
+The porfolio is single page but will include links to additional projects (web pages). 
+The design is responsive and optimized for SEO and accessibility (with improvements to follow).
+Amongst the rules, properties, and elements studied over the first two weeks of the course, the following were applied in this portfolio design:
+
+Flexbox Layout
+Flexbox Styling
+Responsive Design
+CSS Reset
+Media Query Screen
+CSS selectors
+Hover with background image, box-shadow and glow
 
 ## Technologies used
 
