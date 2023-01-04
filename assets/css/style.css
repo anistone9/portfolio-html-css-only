@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*Basic colors used to style the webpage*/
 :root {
     --light: rgb(193, 208, 220);
     --dark: black;
@@ -42,11 +43,11 @@ p {
     display: flex;
     flex-shrink: 0;
     align-items: center;
-    cursor: pointer;
     color: var(--light);
     transition: color .3s;
 }
 
+/*Logo image and subheader*/
 img {
     max-width: 100%;
     max-height: 100%;
@@ -54,8 +55,8 @@ img {
 }
 
 .logo {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
     display: inline-flex;
 }
 
@@ -67,14 +68,16 @@ img {
     padding-left: 10px;
 }
 
+/*Nav bar with links to page sections*/
 .header_nav {
     display: block;
+    cursor: pointer;
 }
 
 .header_nav a {
     display: inline-block;
-    padding: 5px 20px;
-    margin-right: 10px;
+    padding: 0 5px;
+    margin-right: 0;
     color: var(--light);
     font-size: 1.1rem;
     background-image: linear-gradient(270deg, var(--dark) 0%, var(--dark) 100%);
@@ -87,10 +90,6 @@ img {
 .header_nav a:hover {
     background-size: 100% 100%;
     color: var(--bright);
-}
-
-nav a:last-child {
-    margin-right: 0;
 }
 
 .subheader_section {
@@ -129,6 +128,7 @@ nav a:last-child {
     margin-bottom: 20px;
 }
 
+/*Section defining the layout for the cards*/
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -136,19 +136,20 @@ nav a:last-child {
 }
 
 .site {
-    border: 5px solid var(--soft);
+    border: 1px solid var(--soft);
     color: var(--bright);
-    min-height: 150px;
-    max-height: 150px;
+    box-shadow: 10px 10px 5px var(--dark);
+    min-height: 200px;
+    max-height: 200px;
     flex-basis: calc(50% - 1em);
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 0 0 20px 0;
-    margin: 0.5em;
+    margin: 0.5rem;
     text-decoration: none;
-    background-blend-mode: hard-light;
-    background-size: 150%;
-    transition: all 0.25s;
+    background-blend-mode: soft-light;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out;
     font-size: 1rem;
 }
 
@@ -157,8 +158,10 @@ nav a:last-child {
     flex-basis: 100%;
 }
 
+/*A bit over the top, but experimenting with glow effects and gradients*/
 .site:hover {
     background-color: rgba(169, 174, 247, 0.5);
+    box-shadow: inset 0px 0px 8px rgb(16, 37, 60), 0 0 15px rgb(16, 37, 60);
 }
 
 .site div {
@@ -167,9 +170,10 @@ nav a:last-child {
 }
 
 .site h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
+/*Footer with contact information*/
 footer {
     display: flex;
     flex-direction: row;
@@ -205,16 +209,17 @@ footer ul li a:hover {
     color: var(--bright);
 }
 
+/*Project images for the portfolio*/
 .main-event {
     background-image: url("../images/Rings.jpg")
 }
 
 .other-training {
-    background-image: url("../images/Paws.jpg");
+    background-image: url("../images/Paws 2.jpg");
 }
 
 .other-adventure {
-    background-image: url("../images/Adventure.jpg");
+    background-image: url("../images/Adventure 2.jpg");
 }
 
 .other-planner {
@@ -222,9 +227,10 @@ footer ul li a:hover {
 }
 
 .other-schedule {
-    background-image: url("../images/Planting.jpg")
+    background-image: url("../images/Potted.jpg")
 }
 
+/*Media screen layout*/
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
