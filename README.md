@@ -9,7 +9,7 @@ Footer includes contact information, with email and links to GitHub and LinkedIn
 
 ## Deployed application
 
-https://anistone9.github.io/Challenge-2/
+https://anistone9.github.io/portfolio-html-css-only/
 
 ![image](https://user-images.githubusercontent.com/58886869/211178511-678eb8dc-df43-4087-8838-c92e8d8aac34.png)
 
